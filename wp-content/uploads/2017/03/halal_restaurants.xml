@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.2
+- https://www.phpmyadmin.net
+-
+- 主機: localhost:3306
+- 產生時間： 2017 年 09 月 13 日 23:17
+- 伺服器版本: 5.7.19
+- PHP 版本： 7.0.21
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="bitnami_wordpress" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="halal_restaurants">
+                CREATE TABLE `halal_restaurants` (
+                  `Name` varchar(50) NOT NULL,
+                  `Address` varchar(255) NOT NULL,
+                  `Phone` varchar(15) NOT NULL,
+                  `Website` varchar(255) NOT NULL,
+                  `lat` int(11) NOT NULL,
+                  `lng` int(11) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - 資料庫： 'bitnami_wordpress'
+    -->
+    <database name="bitnami_wordpress">
+        <!-- 資料表 halal_restaurants -->
+        <table name="halal_restaurants">
+            <column name="Name">African Village Kitchen-Cafe</column>
+            <column name="Address">43 Walker St Dandenong Victoria 3175</column>
+            <column name="Phone">0404 330 432</column>
+            <column name="Website">http://www.africanvillagekitchen.com</column>
+            <column name="lat">-38</column>
+            <column name="lng">145</column>
+        </table>
+        <table name="halal_restaurants">
+            <column name="Name">Alamaro italian restaurant</column>
+            <column name="Address">114 Bell street
+Coburg Victoria 3058</column>
+            <column name="Phone">(03) 9918 8087</column>
+            <column name="Website">http://www.alamarohalal.com.au</column>
+            <column name="lat">-38</column>
+            <column name="lng">145</column>
+        </table>
+    </database>
+</pma_xml_export>
